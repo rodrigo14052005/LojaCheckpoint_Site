@@ -76,80 +76,80 @@ const config = {
     ],
   ],
 
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
+      // Social card (podes trocar por uma imagem tua)
       image: 'img/docusaurus-social-card.jpg',
+
+      // Modo claro/escuro
       colorMode: {
+        defaultMode: 'light',
         respectPrefersColorScheme: true,
+        disableSwitch: false,
       },
+
+      // ===== NAVBAR (HEADER) =====
       navbar: {
-        title: 'My Site',
+        title: 'Loja Checkpoint Docs',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Logo Loja Checkpoint',
+          src: 'img/logo.svg',           // coloca em static/img/logo.svg
+          srcDark: 'img/logo-dark.svg',  // opcional (static/img/logo-dark.svg)
+          href: '/',
+          target: '_self',
         },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
+          // Docs principais (IDs = nomes dos ficheiros em docs/)
+          { type: 'doc', docId: 'intro',            position: 'left', label: 'Introdução' },
+          { type: 'doc', docId: 'instalacao',       position: 'left', label: 'Instalação' },
+          { type: 'doc', docId: 'funcionalidades',  position: 'left', label: 'Funcionalidades' },
+          { type: 'doc', docId: 'estrutura',        position: 'left', label: 'Arquitetura' },
+          { type: 'doc', docId: 'roadmap',          position: 'left', label: 'Roadmap' },
+
+          // Blog (mantive, pois tens a pasta blog)
+          { to: '/blog', label: 'Blog', position: 'right' },
+
+          // Links para os repositórios
+          { href: 'https://github.com/Deni-jpg/Loja-Checkpoint', label: 'Código do App', position: 'right' },
+          { href: 'https://github.com/eduardo895/Loja-Checkpoint-Site', label: 'Código do Site', position: 'right' },
         ],
       },
+
+      // ===== FOOTER =====
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Documentação',
             items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
+              { label: 'Introdução',      to: '/intro' },
+              { label: 'Instalação',      to: '/instalacao' },
+              { label: 'Funcionalidades', to: '/funcionalidades' },
+              { label: 'Arquitetura',     to: '/estrutura' },
+              { label: 'Roadmap',         to: '/roadmap' },
             ],
           },
           {
-            title: 'Community',
+            title: 'Projeto',
             items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
+              { label: 'GitHub — App',  href: 'https://github.com/Deni-jpg/Loja-Checkpoint' },
+              { label: 'GitHub — Site', href: 'https://github.com/eduardo895/Loja-Checkpoint-Site' },
             ],
           },
           {
-            title: 'More',
+            title: 'Suporte',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
+              { label: 'Issues (App)',  href: 'https://github.com/Deni-jpg/Loja-Checkpoint/issues' },
+              { label: 'Issues (Site)', href: 'https://github.com/eduardo895/Loja-Checkpoint-Site/issues' },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `© ${new Date().getFullYear()} Loja Checkpoint — Documentação do backend em Python.`,
       },
+
+      // Syntax highlight
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
@@ -158,3 +158,4 @@ const config = {
 };
 
 export default config;
+

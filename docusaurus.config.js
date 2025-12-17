@@ -92,7 +92,7 @@ const config = {
       },
       items: [
         { type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left', label: 'Documentação' },
-        { to: '/blog', label: 'Blog', position: 'left' },
+        { to: '/blog', label: 'Autores', position: 'left' },
         { href: 'https://github.com/Deni-jpg/Loja-Checkpoint', label: 'GitHub App', position: 'right' },
       ],
     },
@@ -106,13 +106,16 @@ const config = {
           items: [
             { label: 'Introdução', to: '/docs/intro' },
             { label: 'Instalação', to: '/docs/instalacao' },
+            { label: 'Funcionalidades', to: 'docs/funcionalidades' },
+            { label: 'Estrutura do projeto', to: 'docs/estrutura' },
+            { label: 'Roadmap', to: 'docs/roadmap' }
           ],
         },
         {
           title: 'Projeto',
           items: [
-            { label: 'GitHub App', href: 'https://github.com/Deni-jpg/Loja-Checkpoint' },
-            { label: 'GitHub Site', href: 'https://github.com/eduardo895/Loja-Checkpoint-Site' },
+            { label: 'Repositório Git do App em Python', href: 'https://github.com/Deni-jpg/Loja-Checkpoint' },
+            { label: 'Repositório Git do nosso site', href: 'https://github.com/rodrigo14052005/LojaCheckpoint_Site' },
           ],
         },
       ],

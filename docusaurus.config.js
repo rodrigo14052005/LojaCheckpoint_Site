@@ -77,85 +77,54 @@ const config = {
   ],
 
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      // Social card (podes trocar por uma imagem tua)
-      image: 'img/docusaurus-social-card.jpg',
+  themeConfig: {
+    image: 'img/docusaurus-social-card.jpg',
+    colorMode: {
+      respectPrefersColorScheme: true,
+    },
 
-      // Modo claro/escuro
-      colorMode: {
-        defaultMode: 'light',
-        respectPrefersColorScheme: true,
-        disableSwitch: false,
+    // ✅ HEADER (Navbar)
+    navbar: {
+      title: 'Loja Checkpoint Docs',
+      logo: {
+        alt: 'Logo Loja Checkpoint',
+        src: 'img/logo.svg',
       },
+      items: [
+        { type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left', label: 'Documentação' },
+        { to: '/blog', label: 'Blog', position: 'left' },
+        { href: 'https://github.com/Deni-jpg/Loja-Checkpoint', label: 'GitHub App', position: 'right' },
+      ],
+    },
 
-      // ===== NAVBAR (HEADER) =====
-      navbar: {
-        title: 'Loja Checkpoint Docs',
-        logo: {
-          alt: 'Logo Loja Checkpoint',
-          src: 'img/logo.svg',           // coloca em static/img/logo.svg
-          srcDark: 'img/logo-dark.svg',  // opcional (static/img/logo-dark.svg)
-          href: '/',
-          target: '_self',
+    // ✅ FOOTER (simplificado)
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Documentação',
+          items: [
+            { label: 'Introdução', to: '/docs/intro' },
+            { label: 'Instalação', to: '/docs/instalacao' },
+          ],
         },
-        items: [
-          // Docs principais (IDs = nomes dos ficheiros em docs/)
-          { type: 'doc', docId: 'intro',            position: 'left', label: 'Introdução' },
-          { type: 'doc', docId: 'instalacao',       position: 'left', label: 'Instalação' },
-          { type: 'doc', docId: 'funcionalidades',  position: 'left', label: 'Funcionalidades' },
-          { type: 'doc', docId: 'estrutura',        position: 'left', label: 'Arquitetura' },
-          { type: 'doc', docId: 'roadmap',          position: 'left', label: 'Roadmap' },
+        {
+          title: 'Projeto',
+          items: [
+            { label: 'GitHub App', href: 'https://github.com/Deni-jpg/Loja-Checkpoint' },
+            { label: 'GitHub Site', href: 'https://github.com/eduardo895/Loja-Checkpoint-Site' },
+          ],
+        },
+      ],
+      copyright: `© ${new Date().getFullYear()} Loja Checkpoint — Todos os direitos reservados.`,
+    },
 
-          // Blog (mantive, pois tens a pasta blog)
-          { to: '/blog', label: 'Blog', position: 'right' },
-
-          // Links para os repositórios
-          { href: 'https://github.com/Deni-jpg/Loja-Checkpoint', label: 'Código do App', position: 'right' },
-          { href: 'https://github.com/eduardo895/Loja-Checkpoint-Site', label: 'Código do Site', position: 'right' },
-        ],
-      },
-
-      // ===== FOOTER =====
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Documentação',
-            items: [
-              { label: 'Introdução',      to: '/intro' },
-              { label: 'Instalação',      to: '/instalacao' },
-              { label: 'Funcionalidades', to: '/funcionalidades' },
-              { label: 'Arquitetura',     to: '/estrutura' },
-              { label: 'Roadmap',         to: '/roadmap' },
-            ],
-          },
-          {
-            title: 'Projeto',
-            items: [
-              { label: 'GitHub — App',  href: 'https://github.com/Deni-jpg/Loja-Checkpoint' },
-              { label: 'GitHub — Site', href: 'https://github.com/eduardo895/Loja-Checkpoint-Site' },
-            ],
-          },
-          {
-            title: 'Suporte',
-            items: [
-              { label: 'Issues (App)',  href: 'https://github.com/Deni-jpg/Loja-Checkpoint/issues' },
-              { label: 'Issues (Site)', href: 'https://github.com/eduardo895/Loja-Checkpoint-Site/issues' },
-            ],
-          },
-        ],
-        copyright: `© ${new Date().getFullYear()} Loja Checkpoint — Documentação do backend em Python.`,
-      },
-
-      // Syntax highlight
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-    }),
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
+  },
 };
 
-export default config;
 
+export default config;

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkloja_checkpoint_site=globalThis.webpackChunkloja_checkpoint_site||[]).push([[9647],{7121(e,s,a){a.r(s),a.d(s,{default:()=>h});a(6540);var c=a(4164),r=a(7559),t=a(5500),i=a(2831),l=a(1656),o=a(4848);function h(e){return(0,o.jsx)(t.e3,{className:(0,c.A)(r.G.wrapper.docsPages),children:(0,o.jsx)(l.A,{children:(0,i.v)(e.route.routes)})})}}}]);

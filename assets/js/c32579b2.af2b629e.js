@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkloja_checkpoint_site=globalThis.webpackChunkloja_checkpoint_site||[]).push([[2722],{9927(e){e.exports=JSON.parse('{"metadata":{"permalink":"/LojaCheckpoint_Site/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

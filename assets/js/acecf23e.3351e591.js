@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkloja_checkpoint_site=globalThis.webpackChunkloja_checkpoint_site||[]).push([[1903],{1912(o){o.exports=JSON.parse('{"blogBasePath":"/LojaCheckpoint_Site/blog","blogTitle":"Blog","authorsListPath":"/LojaCheckpoint_Site/blog/authors"}')}}]);

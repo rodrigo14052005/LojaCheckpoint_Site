@@ -1,40 +1,35 @@
----
-sidebar_position: 3
-title: Funcionalidades
----
+# Funcionalidades
 
-# Funcionalidades da Loja Checkpoint
+A Loja Checkpoint inclui as seguintes funcionalidades principais:
 
-A aplicação oferece um conjunto de recursos para gestão e interação com jogos, tudo via terminal.
+## Conta e acesso
+- Login e registo de utilizadores (Supabase)
 
-## 🔐 Autenticação
-- Login e registo de utilizadores.
-- Validação básica de credenciais.
-- Logout seguro.
+## Loja e compras
+- Sistema de carrinho e finalização de compras
+- Histórico detalhado de compras
+- Wishlist (lista de desejos)
 
-## 🛒 Loja
-- Listagem de produtos (jogos com nome, preço, género e rating).
-- Pesquisa e filtragem por nome, categoria ou preço.
-- Carrinho de compras (adicionar, remover, alterar quantidade).
-- Wishlist (adicionar/remover jogos).
-- Finalização de compras com cálculo do total.
+## Produtos e comunidade
+- Comentários (com possibilidade de moderação)
+- Avaliação de produtos (1 a 5 estrelas)
+- Comparação de jogos lado a lado no terminal (Tabulate)
 
-## 💬 Interação
-- Comentários com moderação (aprovar/rejeitar).
-- Avaliações de 1 a 5 estrelas por jogo (média exibida na listagem).
+## Interface e configuração
+- Configuração de tema (dark/light)
+- Interface visual unificada no terminal
 
-## 📜 Histórico
-- Histórico detalhado de compras com data, hora, itens e total.
-- Exportação ou visualização por período (planeado).
-
-## 🛠 Utilitários
-- Comparação de jogos em tabela (preço, género, rating).
-- Alternância de tema (dark/light) via `config.json`.
+## Administração
+- Gestão de utilizadores e produtos (admin)
 
 ---
 
-### Fluxo típico
-1. Registar ou fazer login.
-2. Explorar jogos → adicionar ao carrinho ou wishlist.
-3. Finalizar compra → consultar histórico.
-4. Avaliar jogos e deixar comentários.
+## O que vem a seguir (planeado)
+Estas funcionalidades constam no roadmap e serão detalhadas mais à frente:
+
+- Pontos de fidelidade
+- Painel administrativo mais completo
+- Promoções e descontos
+- Exportação CSV
+- Notificações locais
+- Moderação avançada

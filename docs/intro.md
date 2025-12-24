@@ -1,27 +1,33 @@
 ---
-sidebar_position: 1
-title: Introdução
+authors: [eduardo]
+tags: [loja, tecnologia, projetos]
 ---
 
 # Loja Checkpoint
 
-A **Loja Checkpoint** é uma loja de videojogos em **modo terminal (CLI)** feita em **Python**.  
-Permite autenticação, compra de jogos, carrinho, wishlist, avaliações, comentários e histórico — tudo via terminal.
+A **Loja Checkpoint** é uma aplicação de loja digital em terminal (**CLI**) desenvolvida em **Python**, com base de dados no **Supabase**.
 
-> Repositório do app: **https://github.com/Deni-jpg/Loja-Checkpoint**
+O projeto simula uma loja de videojogos onde os utilizadores podem autenticar-se, comprar jogos, avaliar produtos, deixar comentários e muito mais — tudo diretamente no terminal. 
 
-## Objetivos desta documentação
-- Como **instalar** e **executar** o projeto.
-- Como **configurar** (ficheiros e variáveis).
-- Como **usar as funcionalidades** (passo a passo).
-- Visão geral da **arquitetura** e **módulos** do código.
-- **Roadmap** de melhorias.
+## Objetivos do projeto
 
-## Público-alvo
-- Estudantes e devs que querem **rodar** o projeto localmente.
-- Colaboradores que desejam **contribuir** (issues/PRs).
-- Avaliadores que precisam entender rapidamente o **fluxo** e a **estrutura**.
+- Criar uma experiência de loja completa no terminal
+- Praticar integração com base de dados e autenticação (Supabase)
+- Implementar funcionalidades comuns de e-commerce (carrinho, wishlist, histórico, avaliações)
 
-## Convenções
-- Python 3.10+.
-- Ambiente virtual recomendado- Ambiente virtual recomendado.
+## Tecnologias usadas
+
+- Python 3.10+ 
+- Supabase (autenticação + base de dados) 
+- Tabulate (comparação de jogos/tabelas no terminal) 
+- Colorama (cores/estilo no terminal) 
+- Dotenv (variáveis de ambiente) 
+- SendGrid (emails/alertas) 
+
+## Como executar (rápido)
+
+```bash
+git clone https://github.com/Deni-jpg/Loja-Checkpoint.git
+cd Loja-Checkpoint
+pip install -r requirements.txt
+python main.py

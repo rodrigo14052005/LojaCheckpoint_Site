@@ -68,6 +68,8 @@ const config = {
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
+          blogSidebarCount: 0,
+          blogSidebarTitle: ' '
         },
         theme: {
           customCss: './src/css/custom.css',

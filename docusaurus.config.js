@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Loja Checkpoint',
-  tagline: 'O site.com',
+  tagline: 'Melhores jogos? Só na LojaCheckpoint!',
   favicon: 'img/loja_checkpoint_image.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future

@@ -1,29 +1,32 @@
 ---
 slug: welcome
-title: Welcome
-authors: [slorber, yangshun]
-tags: [facebook, hello, docusaurus]
+title: Bem-vindo à Loja Checkpoint
+authors: [eduardo, rodrigo, deni]
+tags: [loja, tecnologia, projetos]
 ---
 
-[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).
+Bem-vindo ao blog da **Loja Checkpoint** 👋  
+Aqui partilhamos novidades, projetos e conteúdos relacionados com tecnologia, desenvolvimento e eletrónica.
 
-Here are a few tips you might find useful.
+## 👥 Nossa equipa
+
+### 👨‍💻 Eduardo
+Desenvolvedor focado em soluções práticas e eficientes. Atua no desenvolvimento e manutenção de projetos tecnológicos, sempre buscando simplicidade e bom desempenho.
+
+### 👨‍💻 Rodrigo
+Desenvolvedor com interesse em criação de sistemas e aplicações. Participa ativamente no planeamento e execução dos projetos da Loja Checkpoint.
+
+### 👨‍💻 Deni
+Desenvolvedor entusiasta de tecnologia, contribuindo com ideias, implementação e testes para garantir qualidade e inovação nos projetos.
 
 <!-- truncate -->
 
-Simply add Markdown files (or folders) to the `blog` directory.
+## 🛠️ O que você vai encontrar por aqui
 
-Regular blog authors can be added to `authors.yml`.
+- Atualizações sobre projetos da Loja Checkpoint  
+- Conteúdos sobre programação e tecnologia  
+- Tutoriais e dicas práticas  
+- Novidades e anúncios importantes  
 
-The blog post date can be extracted from filenames, such as:
-
-- `2019-05-30-welcome.md`
-- `2019-05-30-welcome/index.md`
-
-A blog post folder can be convenient to co-locate blog post images:
-
-![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg)
-
-The blog supports tags as well!
-
-**And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config.
+Este blog é mantido pela nossa equipa e está sempre em evolução 🚀  
+Fique à vontade para acompanhar e explorar os conteúdos!

@@ -88,7 +88,7 @@ const config = {
       title: 'Loja Checkpoint Docs',
       logo: {
         alt: 'Logo Loja Checkpoint',
-        src: 'img/logo.svg',
+        src: 'img/loja_checkpoint_image.png',
       },
       items: [
         { type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left', label: 'Documentação' },
